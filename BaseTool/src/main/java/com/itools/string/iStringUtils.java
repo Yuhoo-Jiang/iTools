@@ -8,7 +8,11 @@ package com.itools.string;
  * ***************更新历史*******************
  */
 public class iStringUtils {
-
+    /**
+     * 判断String串是否为空
+     * @param str
+     * @return 空(true),非空（false）
+     */
     public static boolean isEmpty(String str){
         if(str == null) return true;
         if(str.length() == 0) return true;
