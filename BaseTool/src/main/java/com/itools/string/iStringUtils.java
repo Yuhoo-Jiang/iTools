@@ -19,4 +19,18 @@ public class iStringUtils {
         return false;
 
     }
+
+    /**
+     * String转int
+     * @param value
+     * @param def 默认值
+     * @return
+     */
+    public static int string2Int(String value,int def){
+        try {
+            return Integer.parseInt(value);
+        }catch (Exception e){
+            return def;
+        }
+    }
 }
