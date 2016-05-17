@@ -1,5 +1,7 @@
 package com.itools.string;
 
+import java.math.BigDecimal;
+
 /**
  * 描述：该工具类主要是提供针对string对象的一些常用操作方法
  *
@@ -32,5 +34,17 @@ public class iStringUtils {
         }catch (Exception e){
             return def;
         }
+    }
+
+    /**
+     * 将金额保留n位小数,整数将会转换成N.00,小数位不足时用0补位
+     * @param money
+     * @param scale 小数位
+     * @return
+     */
+    private static String formatMoney(double money,int scale){
+        String format = "%." + scale + "f";
+        return String.format(format,money);
+
     }
 }

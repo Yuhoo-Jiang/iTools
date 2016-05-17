@@ -20,7 +20,7 @@ import java.util.Map;
  * 时间： 2016/5/13.
  */
 public class XMLHelper {
-    private static final String  XML_NODE = "<{NODENAME}><![CDATA[{NODEVALUE}]]</{NODENAME}>";
+    private static final String  XML_NODE = "<{NODENAME}><![CDATA[{NODEVALUE}]]></{NODENAME}>";
 
     /**
      * 将Map对象转换成xml字符串，如果存在多级节点，子节点应该为Map对象
