@@ -42,9 +42,23 @@ public class iStringUtils {
      * @param scale 小数位
      * @return
      */
-    private static String formatMoney(double money,int scale){
+    public static String formatMoney(double money,int scale){
         String format = "%." + scale + "f";
         return String.format(format,money);
 
     }
+
+    /**
+     * 格式化string参数
+     * @param str 如:我叫{0}，今年{1}岁
+     * @param params String[] {"蒋祖兵"，“30”}
+     * @return
+     */
+    public static String format(String str,String[] params){
+        for(int i = 0;i<params.length;i++){
+            str = str.replace("{"+i+"}",params[i]);
+        }
+        return str;
+    }
+
 }
