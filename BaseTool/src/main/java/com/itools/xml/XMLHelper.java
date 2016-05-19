@@ -9,10 +9,7 @@ import org.jdom.input.SAXBuilder;
 import java.io.ByteArrayInputStream;
 import java.io.IOException;
 import java.io.InputStream;
-import java.util.HashMap;
-import java.util.Iterator;
-import java.util.List;
-import java.util.Map;
+import java.util.*;
 
 /**
  * 作者：蒋祖兵
@@ -73,7 +70,7 @@ public class XMLHelper {
             return null;
         }
 
-        Map m = new HashMap();
+        LinkedHashMap m = new LinkedHashMap();
 
         InputStream in = null;
         try {
