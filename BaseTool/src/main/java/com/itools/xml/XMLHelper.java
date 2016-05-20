@@ -63,7 +63,7 @@ public class XMLHelper {
      * @throws JDOMException
      * @throws IOException
      */
-    public static Map<String,String> xmlStr2Map(String strxml){
+    public static LinkedHashMap<String,String> xmlStr2Map(String strxml){
         strxml = strxml.replaceFirst("encoding=\".*\"", "encoding=\"UTF-8\"");
 
         if (null == strxml || "".equals(strxml)) {
