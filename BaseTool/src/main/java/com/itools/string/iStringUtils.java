@@ -61,4 +61,14 @@ public class iStringUtils {
         return str;
     }
 
+    /**
+     * 根据参数格式化字段串
+     * @param str 如:我叫{0}，今年{1}岁
+     * @param params
+     * @return
+     */
+    public static String formatString(String str,String ...params){
+        String[] params_ = params;
+        return format(str,params_);
+    }
 }
