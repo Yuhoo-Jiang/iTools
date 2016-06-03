@@ -22,12 +22,18 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <processorPath useClasspath="true" />
-        <module name="BaseTool" />
         <module name="Tools" />
+      </profile>
+      <profile default="false" name="Annotation profile for BaseTool" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <processorPath useClasspath="true" />
+        <module name="BaseTool" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel target="1.6">
-      <module name="BaseTool" target="1.5" />
+      <module name="BaseTool" target="1.7" />
       <module name="iTools" target="1.5" />
       <module name="Tools" target="1.5" />
     </bytecodeTargetLevel>
