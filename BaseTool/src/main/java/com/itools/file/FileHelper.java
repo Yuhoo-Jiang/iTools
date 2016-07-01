@@ -69,4 +69,16 @@ public class FileHelper {
         }
         return sb.toString();
     }
+
+    /**
+     * 删除指定路径文件
+     * @param filePath
+     * @return
+     */
+    public static boolean deleteFile(String filePath){
+        File file = new File(filePath);
+        if(file.exists())
+            file.delete();
+        return true;
+    }
 }
